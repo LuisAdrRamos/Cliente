@@ -16,7 +16,7 @@ public class Ventana extends JFrame {
 
     public Ventana() {
         setTitle("Calculadora");
-        setSize(300, 350);
+        setSize(300, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(null);
@@ -30,27 +30,27 @@ public class Ventana extends JFrame {
         add(txtNumero2);
 
         btnSumar = new JButton("+");
-        btnSumar.setBounds(50, 100, 80, 30);
+        btnSumar.setBounds(50, 100, 95, 30);
         add(btnSumar);
 
         btnRestar = new JButton("-");
-        btnRestar.setBounds(140, 100, 80, 30);
+        btnRestar.setBounds(155, 100, 95, 30);
         add(btnRestar);
 
         btnMultiplicar = new JButton("*");
-        btnMultiplicar.setBounds(50, 140, 80, 30);
+        btnMultiplicar.setBounds(50, 140, 95, 30);
         add(btnMultiplicar);
 
         btnDividir = new JButton("/");
-        btnDividir.setBounds(140, 140, 80, 30);
+        btnDividir.setBounds(155, 140, 95, 30);
         add(btnDividir);
 
         btnClean = new JButton("Limpiar");
-        btnClean.setBounds(50, 180, 170, 30);
+        btnClean.setBounds(50, 180, 200, 30);
         add(btnClean);
 
         lblResultado = new JLabel("Resultado: ");
-        lblResultado.setBounds(50, 210, 200, 30);
+        lblResultado.setBounds(50, 220, 200, 30);
         add(lblResultado);
 
         btnClean.addActionListener(e -> {
